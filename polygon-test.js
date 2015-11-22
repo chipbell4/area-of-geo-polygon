@@ -4,6 +4,10 @@ var area = require('area-polygon');
 
 /**
  * Calculates the error from our projection for the specified polygon
+ *
+ * @param {Array} polygon An array of points to project and then calculate area for
+ * @param {Number} expectedArea The expected area of the polygon
+ * @return {Object} An object with the calculated area, and an percentage error showing how far off from the expected we were
  */
 module.exports = function(polygon, expectedArea) {
   // first, project

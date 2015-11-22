@@ -62,8 +62,10 @@ var testCases = [
 
 console.log('RUNNING TESTS');
 testCases.forEach(function(testCase) {
+  // run the test
   var result = polygonTest(testCase.polygon, testCase.expectedArea);
 
+  // Log out the results
   console.log(testCase.name, result.percent.toFixed(2) + '%', 'Expected ' + testCase.expectedArea, 'Got ' + result.actual);
 });
 console.log('DONE');
