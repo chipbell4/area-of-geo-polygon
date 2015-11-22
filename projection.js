@@ -1,5 +1,8 @@
 /**
  * Projects a point to a different coordinate system
+ *
+ * @param {Array|Object} A point to project
+ * @return {Object} The projected point
  */
 module.exports = function(point) {
   // The snippet allows the point to be provided as an array [1, 2] or a "point" { x: 1, y: 2 }
