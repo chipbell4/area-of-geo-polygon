@@ -13,5 +13,8 @@ module.exports = function(polygon, expectedArea) {
   var polygonArea = area(projectedPolygon);
 
   // spit back the associated error
-  return calculateError(expectedArea, polygonArea);
+  return {
+    actual: polygonArea,
+    percent: calculateError(expectedArea, polygonArea)
+  };
 };
